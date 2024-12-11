@@ -1,14 +1,8 @@
 {
   pkgs,
   fetchFromGitHub,
-  makeRustPlatform,
-  rust-bin,
-}: let
-  rustPlatform = makeRustPlatform {
-    cargo = rust-bin.stable."1.83.0".minimal;
-    rustc = rust-bin.stable."1.83.0".minimal;
-  };
-in
+  rustPlatform,
+}:
   rustPlatform.buildRustPackage rec {
     pname = "ez-uploader";
     version = "0.3.0";
