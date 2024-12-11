@@ -12,5 +12,4 @@
   example-package = pkgs.callPackage ./pkgs/example-package {};
   ez = pkgs.callPackage ./pkgs/ez {};
   wisdom-tree = pkgs.callPackage ./pkgs/wisdom-tree {};
-  # ez = pkgs.callPackage ./pkgs/ez {};
 }
