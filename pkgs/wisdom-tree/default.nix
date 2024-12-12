@@ -1,4 +1,5 @@
 {
+  lib,
   pkgs,
   fetchFromGitHub,
   ...
@@ -20,4 +21,10 @@ in
       python-vlc
       pytube
     ];
+    meta = {
+      description = "TUI concentration app with features like pomodoro timer, YouTube music player, Lo-fi radio.";
+      homepage = "https://github.com/Hacker097/wisdom-tree";
+      license = lib.licenses.mit;
+      mainProgram = "wisdom-tree";
+    };
   }
