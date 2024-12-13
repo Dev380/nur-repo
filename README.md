@@ -27,7 +27,7 @@
 
 CI code from [cryolitia](https://github.com/nix-community/nur-combined/tree/dca43584b1cbd8cab9be013d74e71cd1be16e953/repos/cryolitia).
 
-![Build and populate cache](https://github.com/dev380/nur-packages/workflows/Build%20and%20populate%20cache/badge.svg)
+![Build and populate cache](https://github.com/dev380/nur-repo/workflows/Build%20and%20populate%20cache/badge.svg)
 
 [![Cachix Cache](https://img.shields.io/badge/cachix-dev380-blue.svg)](https://dev380.cachix.org)
 
