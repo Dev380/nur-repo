@@ -38,11 +38,11 @@ jobs:
           authToken: "${{ secrets.CACHIX_AUTH_TOKEN }}"
 
       - name: Build x86_64-linux nix packages
-        if ${{ matrix.arch == 'x86_64-linux' }}
+        if: ${{ matrix.arch == 'x86_64-linux' }}
         run: nix run nixpkgs#nix-build-uncached -- -build-flags '-L' ./ci/x86_64-linux.nix
 
       - name: Build x86_64-linux nix packages
-        if ${{ matrix.arch == 'aarch64-linux' }}
+        if: ${{ matrix.arch == 'aarch64-linux' }}
         run: nix run nixpkgs#nix-build-uncached -- -build-flags '-L' ./ci/aarch64-linux.nix
 
       - name: Trigger NUR update
