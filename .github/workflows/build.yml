@@ -31,7 +31,7 @@ jobs:
         run: nix flake metadata --accept-flake-config
 
       - name: Setup cachix
-        uses: cachix/cachix-action@v15
+        uses: cachix/cachix-action@v16
         with:
           name: dev380
           signingKey: "${{ secrets.CACHIX_SIGNING_KEY }}"
